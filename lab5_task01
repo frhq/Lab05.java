@@ -1,0 +1,55 @@
+import java.util.*;
+
+public class Act1 {
+    public static void main(String [] args) {
+        Scanner input = new Scanner(System.in);
+
+        //print all numbers from A to B
+        int A, B;
+        System.out.print("Enter the Number A: ");
+        A = input.nextInt();
+        System.out.print("Enter the Number B: ");
+        B = input.nextInt();
+
+        for (int i = A; i <= B; i++){
+            System.out.print(i+ " ");
+        }System.out.println();
+        System.out.println("--------------------------------------------------");
+
+        // Print all numbers from A to B in ascending and descending order
+       
+        System.out.print("Enter A and B again: ");
+        A = input.nextInt();
+        B = input.nextInt();
+        if (A <= B){
+            for(int i = A; i < B ; i++){
+                System.out.print(i + " ");}
+                System.out.println();
+        }else{
+            for (int i = A ; i >= B ; i--){
+                System.out.print(i + " ");
+            }System.out.println();
+        }
+        System.out.println("----------------------------------------------------");
+             
+               // print the sum of numbers 
+        System.out.print("Enter the number of integers you want to enter: ");
+        int N = input.nextInt();
+        System.out.print("Enter " + N + " integers:  ");
+        int sum = 0;
+          for(int i = 1; i <= N ; i++){
+            int num = input.nextInt();
+            sum = sum + num;
+             }System.out.println("Sum is = " + sum);
+        System.out.println("----------------------------------------------------");
+         
+         //print the sum of cubes
+         System.out.print("Enter the integer you want to find the sum of cube: ");
+         N = input.nextInt();
+         int cubeSum = 0;
+         for (int i = 1 ; i <= N ; i++){
+            cubeSum = cubeSum + ( i * i * i);
+         }
+        System.out.print("The sum of cubes is: " + cubeSum);
+      }
+}
