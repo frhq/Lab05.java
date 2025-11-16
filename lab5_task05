@@ -1,0 +1,20 @@
+import java.util.*;
+public class Act5 {
+    public static void main(String [] args) {
+    Scanner input = new Scanner(System.in);
+
+        int num ;
+        int max = 0;
+            System.out.print("Enter the sequence of number that ends with 0: ");
+        num = input.nextInt();
+                while(num!=0){
+                num = input.nextInt();
+           if (num==0){
+                break; }
+           if (num>max){
+                 max = num;
+             }
+         }
+     System.out.print("The max number is " + max);
+   }
+}
