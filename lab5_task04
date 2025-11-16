@@ -1,0 +1,16 @@
+import java.util.*;
+
+public class Act4 {
+  public static void main(String [] args) {
+     Scanner input = new Scanner(System.in);
+     
+     int count = 0;
+     System.out.print("Enter the non-negative number: ");
+     int num= input.nextInt();
+        while(num!=0){
+         count++;
+         num = input.nextInt();
+      }
+        System.out.print("The Sequence of numbers is " + count);
+    }
+}
